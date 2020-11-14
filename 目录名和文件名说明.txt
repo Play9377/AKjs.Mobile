@@ -1,0 +1,60 @@
+﻿﻿# 目录名和文件名说明：
+
+index.html --- 走路由模式的DEMO页面 （可查看页面切换效果）
+
+html/demo.html --- 未开启路由模式的DEMO页面
+
+layout/main.html --- 路由模式中整个界面的布局；（该文件夹和文件名可以在路由管理器文件中配置）
+
+router/ --- 通过路由访问的html界面，该文件夹也在路由管理器文件中配置（里面的所有html文件中最底部都调用功能插件的方法）
+
+js/router.js --- 路由管理器（该功能切换页面时无刷新跳页的功能，不使用路由功能时可删除该文件。）
+
+html/ --- 该目录是未开启路由模式的演示版文件；
+
+html/js/common.js --- 未开启路由模式全局方法设置以及功能插件按需引入
+
+js/plugin.js --- 走路由模式的全局方法设置以及功能插件按需引入
+
+js/data.js --- Json数据文件
+
+compress/ --- 功能插件目录，里面的css目录是相关功能插件的样式文件（该路径可在AKjs_Config方法中参数设置）
+
+js/akjs.mobile.js --- AKjs手机端主插件（在项目中建议使用压缩版akjs.mobile.min.js）
+
+css/iconfont --- 图标库 (AK图标库地址：http://www.iconfont.cn/collections/detail?cid=8740)
+
+css/akjs.mobile.css --- AKjs全局公共样式库（初始使用本插件的开发者们尽量都看看里面的class命名）
+
+css/akjs.animate.css --- AKjs动画库（在animated.css基础上增加了更多的动画效果）
+
+css/theme.default.css --- 所有颜色相关的样式文件
+
+css/style.css --- 自定义样式文件（引入第三方插件时通过该css文件进行覆盖样式）
+
+
+-----------------------------------------------------------------------------------------------
+router页面的代码结构说明：
+<!--
+* ak-header和ak-footer元素的data-display值是隐藏和显示APP的头部区域和底部菜单区域 (true / false)；
+ak-main和ak-scrollview元素的data-bounce值是滚动区域是否开启ios弹性效果的功能 (true / false)；
+button元素的data-back="true"值是识别为该按钮是返回键的意思
+//注：template，ak-header，ak-footer，script，style等这些元素在页面中不能多个使用否则代码无效；
+路由页面的布局结构使用方法（必须用以下的结构使用）：
+<template>
+    <ak-header>头部区域</ak-header>
+    <ak-main>
+        <ak-scrollview>
+            <div>中间内容</div>
+        </ak-scrollview>
+        <dialog>弹窗代码</dialog>
+    </ak-main>
+    <ak-footer>底部区域</ak-footer>
+</template>
+<script>
+    //编写当前页面的脚本代码区域
+</script>
+<style>
+    //覆盖当前界面的样式区域
+</style>
+-->

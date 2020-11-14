@@ -1,0 +1,123 @@
+﻿/*********************主题颜色定义(默认风格)*********************/
+.c_theme {
+    color: #79c34a !important;
+}
+.c_theme09 {
+    color: rgba(121,195,74,0.9);
+}
+.c_theme08 {
+    color: rgba(121,195,74,0.8);
+}
+.c_theme07 {
+    color: rgba(121,195,74,0.7);
+}
+.c_theme06 {
+    color: rgba(121,195,74,0.6);
+}
+.c_theme05 {
+    color: rgba(121,195,74,0.5);
+}
+.c_theme04 {
+    color: rgba(121,195,74,0.4);
+}
+.c_theme03 {
+    color: rgba(121,195,74,0.3);
+}
+.c_theme02 {
+    color: rgba(121,195,74,0.2);
+}
+.c_theme01 {
+    color: rgba(121,195,74,0.1);
+}
+.bg_theme {
+    background-color: #79c34a !important;
+}
+.bg_theme09 {
+    background-color: rgba(121,195,74,0.9);
+}
+.bg_theme08 {
+    background-color: rgba(121,195,74,0.8);
+}
+.bg_theme07 {
+    background-color: rgba(121,195,74,0.7);
+}
+.bg_theme06 {
+    background-color: rgba(121,195,74,0.6);
+}
+.bg_theme05 {
+    background-color: rgba(121,195,74,0.5);
+}
+.bg_theme04 {
+    background-color: rgba(121,195,74,0.4);
+}
+.bg_theme03 {
+    background-color: rgba(121,195,74,0.3);
+}
+.bg_theme02 {
+    background-color: rgba(121,195,74,0.2);
+}
+.bg_theme01 {
+    background-color: rgba(121,195,74,0.1);
+}
+.bor_theme {
+    border-color: #79c34a !important;
+}
+.bor_theme09 {
+    border-color: #85c75a;
+}
+.bor_theme08 {
+    border-color: #91cc6b;
+}
+.bor_theme07 {
+    border-color: #9cd07c;
+}
+.bor_theme06 {
+    border-color: #a9d58c;
+}
+.bor_theme05 {
+    border-color: #b4d99d;
+}
+.bor_theme04 {
+    border-color: #c0deae;
+}
+.bor_theme03 {
+    border-color: #cce2be;
+}
+.bor_theme02 {
+    border-color: #d8e7cf;
+}
+.bor_theme01 {
+    border-color: #e4ebdf;
+}
+
+a:hover, *[data-href]:active, *:not("button"):active {
+    color: #5aa42c !important;
+}
+button.bg_white:active {
+    background-color: #f5f5f5 !important;
+}
+button.bg_theme:active {
+    background-color: #5aa42c !important;
+}
+.active_theme:active {
+    background-color: #79c34a !important;
+    color: #ffffff !important;
+}
+button.bg_theme[disabled] {
+    border-color: #9cd07c;
+}
+button.bg_theme[disabled]:active {
+    background-color: #79c34a !important;
+}
+
+button.bg_theme01:active,
+button.bg_theme02:active,
+button.bg_theme03:active,
+button.bg_theme04:active,
+button.bg_theme05:active,
+button.bg_theme06:active,
+button.bg_theme07:active,
+button.bg_theme08:active,
+button.bg_theme09:active {
+    background-color: #79c34a !important;
+}
